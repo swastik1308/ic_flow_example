@@ -9,11 +9,11 @@ N 800 -1120 1100 -1120 {lab=#net1}
 N 1100 -1120 1100 -1100 {lab=#net1}
 N 950 -1140 950 -1120 {lab=#net1}
 N 800 -1050 800 -950 {lab=#net2}
-N 1100 -1050 1100 -1040 {lab=#net3}
-N 1100 -1040 1100 -950 {lab=#net3}
-N 1040 -920 1060 -920 {lab=#net3}
-N 1040 -980 1040 -920 {lab=#net3}
-N 1040 -980 1100 -980 {lab=#net3}
+N 1100 -1050 1100 -1040 {lab=DIFFOUT}
+N 1100 -1040 1100 -950 {lab=DIFFOUT}
+N 1040 -920 1060 -920 {lab=DIFFOUT}
+N 1040 -980 1040 -920 {lab=DIFFOUT}
+N 1040 -980 1100 -980 {lab=DIFFOUT}
 N 840 -920 860 -920 {lab=#net2}
 N 860 -980 860 -920 {lab=#net2}
 N 800 -980 860 -980 {lab=#net2}
@@ -31,6 +31,7 @@ N 680 -920 800 -920 {lab=VSS}
 N 1020 -1070 1100 -1070 {lab=VCC}
 N 800 -1080 880 -1080 {lab=VCC}
 N 950 -1170 1030 -1170 {lab=VCC}
+N 1100 -1000 1260 -1000 {lab=DIFFOUT}
 C {title.sym} 490 -460 0 0 {name=l1 author="Stefan Schippers"}
 C {ipin.sym} 1500 -970 0 0 {name=p1 lab=PLUS
 }
@@ -57,7 +58,7 @@ C {ipin.sym} 1510 -1050 0 0 {name=p6 lab=ADJ
 
 
 }
-C {opin.sym} 1400 -1240 0 0 {name=p7 lab=DIFFOUT}
+C {opin.sym} 1260 -1000 0 0 {name=p7 lab=DIFFOUT}
 C {/usr/local/share/pdk/sky130A/libs.tech/xschem/sky130_fd_pr/pfet_01v8.sym} 930 -1170 0 0 {name=M1
 W=2
 L=8

@@ -1,0 +1,10 @@
+** sch_path: /home/swastik/ic_flow_example/xschem/opamp.sch
+.subckt opamp PLUS MINUS VCC VSS EN_N ADJ DIFFOUT
+*.PININFO PLUS:I MINUS:I VCC:I VSS:I EN_N:I ADJ:I DIFFOUT:O
+XM1 net1 EN_N VCC VCC sky130_fd_pr__pfet_01v8 L=8 W=2 nf=1 m=1
+XM2 net2 MINUS net1 VCC sky130_fd_pr__pfet_01v8_lvt L=2 W=8 nf=1 m=1
+XM3 DIFFOUT PLUS net1 VCC sky130_fd_pr__pfet_01v8_lvt L=2 W=8 nf=1 m=1
+XM4 DIFFOUT DIFFOUT VSS VSS sky130_fd_pr__nfet_01v8_lvt L=4 W=2 nf=1 m=1
+XM5 net2 net2 VSS VSS sky130_fd_pr__nfet_01v8_lvt L=4 W=2 nf=1 m=1
+.ends
+.end
